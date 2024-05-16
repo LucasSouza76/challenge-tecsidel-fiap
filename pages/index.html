@@ -8,34 +8,47 @@
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
   <link href="../css/nucleo-icons.css" rel="stylesheet" />
   <link href="../css/nucleo-svg.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>TecSidel</title>
 </head>
-<body class="bg-body-secondary">
+<body class="bg-dark">
   <main class="position-relative border-radius-lg">
-    <div class="custom-header">
-      <span>TecSidel Dashboard</span>
+    <div class="custom-header d-flex justify-content-between">
+      <span class="text-white"><img src="../assets/img/faviconV2.png" style="width: 40px;">  TecSidel Monitoramento</span>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Rodovias
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Rod. Castelo Branco KM 27</a></li>
+          <li><a class="dropdown-item" href="#">Rod. Ayrton Senna KM 50</a></li>
+          <li><a class="dropdown-item" href="#">Rod. Dos Bandeirantes KM 171</a></li>
+          <li><a class="dropdown-item" href="#">Rod. Imigrantes KM 32</a></li>
+        </ul>
+      </div>
     </div>
     <!-- cards header -->
     <div class="row m-4">
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-        <div class="card">
+        <div class="card shadow">
           <div class="card-body p-3">
             <div class="row">
               <div class="col-8">
                 <div class="numbers">
-                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Quantidade de Veículos</p>
-                  <h5 class="font-weight-bolder">
+                  <p class="text-sm mb-0 text-uppercase mb-2 fw-bold fs-7 text-white">Quantidade de Veículos</p>
+                  <h5 class="font-weight-bolder text-white">
                     10.000
                   </h5>
-                  <p class="mb-0">
-                    <span class="text-success text-sm font-weight-bolder">+25%</span>
+                  <p class="mb-0 text-white">
+                    <span class="text-sm" style="color: aquamarine;">+25%</span>
                     desde ontem
                   </p>
                 </div>
               </div>
               <div class="col-4 text-end">
-                <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                  <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                <div class="badge text-bg-dark">
+                  <i class="bi bi-car-front-fill"></i>
                 </div>
               </div>
             </div>
@@ -43,24 +56,24 @@
         </div>
       </div>
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-        <div class="card">
+        <div class="card shadow">
           <div class="card-body p-3">
             <div class="row">
               <div class="col-8">
                 <div class="numbers">
-                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Faturamento</p>
-                  <h5 class="font-weight-bolder">
+                  <p class="text-sm mb-0 text-uppercase mb-2 fw-bold fs-7 text-white">Faturamento</p>
+                  <h5 class="font-weight-bolder text-white">
                     R$ 1.000.000,00
                   </h5>
-                  <p class="mb-0">
-                    <span class="text-success text-sm font-weight-bolder">+2%</span>
+                  <p class="mb-0 text-white">
+                    <span class="text-sm font-weight-bolder" style="color: aquamarine;">+2%</span>
                     desde semana passada
                   </p>
                 </div>
               </div>
               <div class="col-4 text-end">
-                <div class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
-                  <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
+                <div class="badge text-bg-dark">
+                  <i class="bi bi-cash-coin"></i>
                 </div>
               </div>
             </div>
@@ -68,24 +81,24 @@
         </div>
       </div>
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-        <div class="card">
+        <div class="card shadow">
           <div class="card-body p-3">
             <div class="row">
               <div class="col-8">
                 <div class="numbers">
-                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Ocorrências</p>
-                  <h5 class="font-weight-bolder">
+                  <p class="text-sm mb-0 text-uppercase mb-2 fw-bold fs-7 text-white">Ocorrências/24h</p>
+                  <h5 class="font-weight-bolder text-white">
                     4
                   </h5>
-                  <p class="mb-0">
-                    <span class="text-danger text-sm font-weight-bolder">-5%</span>
+                  <p class="mb-0 text-white">
+                    <span class="text-sm font-weight-bolder" style="color: red;">-5%</span>
                     desde ontem
                   </p>
                 </div>
               </div>
               <div class="col-4 text-end">
-                <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
-                  <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
+                <div class="badge text-bg-dark">
+                  <i class="bi bi-exclamation-triangle-fill"></i>
                 </div>
               </div>
             </div>
@@ -93,23 +106,23 @@
         </div>
       </div>
       <div class="col-xl-3 col-sm-6">
-        <div class="card">
+        <div class="card shadow">
           <div class="card-body p-3">
             <div class="row">
               <div class="col-8">
                 <div class="numbers">
-                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Aparelhos Online</p>
-                  <h5 class="font-weight-bolder">
-                    20 de 29
+                  <p class="text-sm mb-0 text-uppercase mb-2 fw-bold fs-7 text-white">Aparelhos Online</p>
+                  <h5 class="font-weight-bolder text-white">
+                    2 de 4
                   </h5>
-                  <p class="mb-0">
-                    <span class="text-success text-sm font-weight-bolder">+1%</span> desde ontem
+                  <p class="mb-0 text-white">
+                    <span class="text-sm font-weight-bolder" style="color: aquamarine;">+1%</span> desde ontem
                   </p>
                 </div>
               </div>
               <div class="col-4 text-end">
-                <div class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle">
-                  <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
+                <div class="badge text-bg-dark">
+                  <i class="bi bi-check-circle"></i>
                 </div>
               </div>
             </div>
@@ -121,125 +134,93 @@
 
     <!-- tabelas -->
     <div class="row m-4">
-          <div class="col-lg-7 mb-lg-0 mb-4">
-            <div class="card">
+          <div class="col-lg-4 mb-lg-0 mb-4">
+            <div class="card shadow">
               <div class="pb-0 p-2">
                 <div class="d-flex justify-content-between">
-                  <h6 class="mb-2">Status Equipamentos</h6>
+                  <h6 class="mb-3 fw-bold fs-5 text-white"><i class="bi bi-gear-wide-connected"></i> Status Equipamentos</h6>
                 </div>
               </div>
               <div class="table-responsive">
-                <table class="table align-items-center ">
+                <table class="table align-items-center">
                   <tbody>
                     <tr>
                       <td class="w-30">
                         <div class="d-flex px-2 py-1 align-items-center">
-                          <div class="ms-4">
-                            <p class="text-xs font-weight-bold mb-0">Equipamento:</p>
-                            <h6 class="text-sm mb-0">Antena 1</h6>
+                          <div class="ms-1">
+                            <p class="text-xs fw-bold mb-2 text-white">Equipamento:</p>
+                            <h6 class="text-sm mb-0 text-white"><i class="bi bi-wifi"></i> Antena 1</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="text-xs font-weight-bold mb-0">Status:</p>
-                          <h6 class="text-sm mb-0">Online</h6>
+                          <p class="text-xs fw-bold mb-2 text-white">Status:</p>
+                          <h6 class="text-sm mb-0 badge text-bg-success">Online</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="text-xs font-weight-bold mb-0">Veículos:</p>
-                          <h6 class="text-sm mb-0">5.000</h6>
-                        </div>
-                      </td>
-                      <td class="align-middle text-sm">
-                        <div class="col text-center">
-                          <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                          <h6 class="text-sm mb-0">29.9%</h6>
+                          <p class="text-xs fw-bold mb-2 text-white">Veículos/24h:</p>
+                          <h6 class="text-sm mb-0 text-white">5.000</h6>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td class="w-30">
                         <div class="d-flex px-2 py-1 align-items-center">
-                          <div class="ms-4">
-                            <p class="text-xs font-weight-bold mb-0">Equipamento:</p>
-                            <h6 class="text-sm mb-0">Antena 2</h6>
+                          <div class="ms-1">
+                            <h6 class="text-sm mb-0 text-white"><i class="bi bi-wifi"></i> Antena 2</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="text-xs font-weight-bold mb-0">Status:</p>
-                          <h6 class="text-sm mb-0">Offline</h6>
+                          <h6 class="text-sm mb-0 badge text-bg-danger">Offline</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="text-xs font-weight-bold mb-0">Veículos:</p>
-                          <h6 class="text-sm mb-0">5.000</h6>
-                        </div>
-                      </td>
-                      <td class="align-middle text-sm">
-                        <div class="col text-center">
-                          <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                          <h6 class="text-sm mb-0">40.22%</h6>
+                          <h6 class="text-sm mb-0 text-white">5.000</h6>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td class="w-30">
                         <div class="d-flex px-2 py-1 align-items-center">
-                          <div class="ms-4">
-                            <p class="text-xs font-weight-bold mb-0">Equipamento:</p>
-                            <h6 class="text-sm mb-0">Câmera 1</h6>
+                          <div class="ms-1">
+                            <h6 class="text-sm mb-0 text-white"><i class="bi bi-camera-fill"></i> Câmera 1</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="text-xs font-weight-bold mb-0">Status:</p>
-                          <h6 class="text-sm mb-0">Online</h6>
+                          <h6 class="text-sm mb-0 badge text-bg-success">Online</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="text-xs font-weight-bold mb-0">Veículos:</p>
-                          <h6 class="text-sm mb-0">5.000</h6>
-                        </div>
-                      </td>
-                      <td class="align-middle text-sm">
-                        <div class="col text-center">
-                          <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                          <h6 class="text-sm mb-0">23.44%</h6>
+
+                          <h6 class="text-sm mb-0 text-white">5.000</h6>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td class="w-30">
                         <div class="d-flex px-2 py-1 align-items-center">
-                          <div class="ms-4">
-                            <p class="text-xs font-weight-bold mb-0">Equipamento:</p>
-                            <h6 class="text-sm mb-0">Câmera 2</h6>
+                          <div class="ms-1">
+                            <h6 class="text-sm mb-0 text-white"><i class="bi bi-camera-fill"></i> Câmera 2</h6>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="text-xs font-weight-bold mb-0">Status:</p>
-                          <h6 class="text-sm mb-0">Offline</h6>
+                          <h6 class="text-sm mb-0 badge text-bg-warning">Manutenção</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="text-xs font-weight-bold mb-0">Veículos:</p>
-                          <h6 class="text-sm mb-0">5.000</h6>
-                        </div>
-                      </td>
-                      <td class="align-middle text-sm">
-                        <div class="col text-center">
-                          <p class="text-xs font-weight-bold mb-0">Bounce:</p>
-                          <h6 class="text-sm mb-0">32.14%</h6>
+                          <h6 class="text-sm mb-0 text-white">5.000</h6>
                         </div>
                       </td>
                     </tr>
@@ -248,67 +229,31 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
-            <div class="card">
-              <div class="pb-0 p-2">
-                <h6 class="mb-0">Tabela 2</h6>
+          <div class="col-lg-4" style="height: 295px;">
+            <div class="card overflow-hidden h-100 p-0 shadow">
+              <div class="h-100">
+                <div class="carousel-inner border-radius-lg h-100">
+                  <div class="carousel-item h-100 active" style="background-image: url('../assets/img/Group\ 1.png');background-size: cover;">
+                    <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                      <h5 class="text-white mb-1">Câmera 1</h5>
+                      <p>21/05/24 21:00h</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="card-body p-3">
-                <ul class="list-group">
-                  <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                    <div class="d-flex align-items-center">
-                      <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                        <i class="ni ni-mobile-button text-white opacity-10"></i>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="mb-1 text-dark text-sm">Devices</h6>
-                        <span class="text-xs">250 in stock, <span class="font-weight-bold">346+ sold</span></span>
-                      </div>
+            </div>
+          </div>
+          <div class="col-lg-4" style="height: 295px;">
+            <div class="card overflow-hidden h-100 p-0 shadow">
+              <div class="h-100">
+                <div class="carousel-inner border-radius-lg h-100">
+                  <div class="carousel-item h-100 active" style="background-image: url('../assets/img/Group\ 2.png');background-size: cover;">
+                    <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                      <h5 class="text-white mb-1">Câmera 2</h5>
+                      <p>21/05/24 21:00h</p>
                     </div>
-                    <div class="d-flex">
-                      <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                    </div>
-                  </li>
-                  <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                    <div class="d-flex align-items-center">
-                      <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                        <i class="ni ni-tag text-white opacity-10"></i>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="mb-1 text-dark text-sm">Tickets</h6>
-                        <span class="text-xs">123 closed, <span class="font-weight-bold">15 open</span></span>
-                      </div>
-                    </div>
-                    <div class="d-flex">
-                      <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                    </div>
-                  </li>
-                  <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                    <div class="d-flex align-items-center">
-                      <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                        <i class="ni ni-box-2 text-white opacity-10"></i>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="mb-1 text-dark text-sm">Error logs</h6>
-                        <span class="text-xs">1 is active, <span class="font-weight-bold">40 closed</span></span>
-                      </div>
-                    </div>
-                    <div class="d-flex">
-                      <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                    </div>
-                  </li>
-                  <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
-                    <div class="d-flex align-items-center">
-                      <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                        <i class="ni ni-satisfied text-white opacity-10"></i>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h6 class="mb-1 text-dark text-sm">Happy users</h6>
-                        <span class="text-xs font-weight-bold">+ 430</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -318,11 +263,11 @@
      <!-- grafico e fotos -->
     <div class="row m-4">
       <div class="col-lg-7 mb-lg-0 mb-4">
-        <div class="card z-index-2 h-100">
+        <div class="card z-index-2 h-100 shadow">
           <div class="card-header pb-0 pt-3 bg-transparent">
-            <h6 class="text-capitalize">Média de Tráfego (por hora)</h6>
+            <h6 class="text-capitalize mb-3 fw-bold fs-5 text-white"><i class="bi bi-bar-chart-fill"></i> Média de Tráfego (por hora)</h6>
             <p class="text-sm mb-0">
-              <span class="font-weight-bold">Data: 24/03/2024</span>
+              <span class="fw-semibold text-white">24/03/2024</span>
             </p>
           </div>
           <div class="card-body p-3">
@@ -336,44 +281,32 @@
         <div class="card card-carousel overflow-hidden h-100 p-0">
           <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
             <div class="carousel-inner border-radius-lg h-100">
-              <div class="carousel-item h-100 active" style="background-image: url('../assets/img/img\ 1.jpg');background-size: cover;">
+              <div class="carousel-item h-100 active" style="background-image: url('../assets/img/Group\ 3.png');background-size: cover;">
                 <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                  <h5 class="text-white mb-1">Get started with Argon</h5>
-                  <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at.</p>
+                  <h5 class="text-white mb-1">Câmera Pórtico 1</h5>
                 </div>
               </div>
-              <div class="carousel-item h-100" style="background-image: url('../assets/img/img\ 2.jpeg');background-size: cover;">
+              <div class="carousel-item h-100" style="background-image: url('../assets/img/Group\ 4.png');background-size: cover;">
                 <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                  <h5 class="text-white mb-1">Faster way to create web pages</h5>
-                  <p>That’s my skill. I’m not really specifically talented at anything except for the ability to learn.</p>
+                  <h5 class="text-white mb-1">Câmera Pórtico 2</h5>
                 </div>
               </div>
-              <div class="carousel-item h-100" style="background-image: url('../assets/img/img\ 3.jpeg');background-size: cover;">
+              <div class="carousel-item h-100" style="background-image: url('../assets/img/Group\ 5.png');background-size: cover;">
                 <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                  <h5 class="text-white mb-1">Share with us your design tips!</h5>
-                  <p>Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
+                  <h5 class="text-white mb-1">Câmera Pórtico 3</h5>
                 </div>
               </div>
-              <div class="carousel-item h-100" style="background-image: url('../assets/img/img\ 4.jpeg');background-size: cover;">
+              <div class="carousel-item h-100" style="background-image: url('../assets/img/Group\ 6.png');background-size: cover;">
                 <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                  <h5 class="text-white mb-1">Share with us your design tips!</h5>
-                  <p>Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
-                </div>
-              </div>
-              <div class="carousel-item h-100" style="background-image: url('../assets/img/img\ 5.jpeg');background-size: cover;">
-                <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-                  <h5 class="text-white mb-1">Share with us your design tips!</h5>
-                  <p>Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
+                  <h5 class="text-white mb-1">Câmera Pórtico 4</h5>
                 </div>
               </div>
             </div>
             <button class="carousel-control-prev w-5 me-3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next w-5 me-3" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
@@ -401,13 +334,13 @@
         new Chart(ctx1, {
           type: "line",
           data: {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"],
+            labels: ["1h", "2h", "3h", "4h", "5h", "6h", "7h", "8h", "9h", "10h", "11h", "12h", "13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h", "21h", "22h", "23h", "24h"],
             datasets: [{
               label: "Veículos",
               tension: 0.4,
               borderWidth: 0,
               pointRadius: 0,
-              borderColor: "#5e72e4",
+              borderColor: "#3bc7f4",
               backgroundColor: gradientStroke1,
               borderWidth: 3,
               fill: true,
@@ -440,7 +373,7 @@
                 ticks: {
                   display: true,
                   padding: 10,
-                  color: '#fbfbfb',
+                  color: 'white',
                   font: {
                     size: 11,
                     family: "Open Sans",
@@ -459,13 +392,13 @@
                 },
                 ticks: {
                   display: true,
-                  color: '#ccc',
+                  color: 'white',
                   padding: 20,
                   font: {
-                    size: 11,
-                    family: "Open Sans",
+                    size: 14,
+                    family: "Segoe UI",
                     style: 'normal',
-                    lineHeight: 2
+                    lineHeight: 0
                   },
                 }
               },

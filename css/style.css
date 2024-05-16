@@ -1,7 +1,7 @@
 .custom-header {
   font-size: 24px;
   font-weight: bold;
-  background-color: lightgreen;
+  background-color: #006685;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -9,7 +9,12 @@
 .card {
   border-radius: 1rem;
   margin-bottom: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
+  background-color: #464e55;
+  border: 1px solid #464e55;
   padding: 10px;
+}
+
+.table {
+  background: #464e55;
+  --bs-table-bg: #464e55;
 }
